@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events - RWCC 2025</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0">
+                        <a href="../index.html">
+                            <div class="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center">
+                                <span class="text-white font-bold text-lg">RWCC</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="hidden md:block ml-10">
+                        <div class="flex items-baseline space-x-4">
+                            <a href="../index.html" class="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium">Home</a>
+                            <a href="about.html" class="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium">About</a>
+                            <a href="events.html" class="text-blue-600 hover:text-blue-800 px-3 py-2 text-sm font-medium">Events</a>
+                            <a href="schedule.html" class="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium">Schedule</a>
+                            <a href="register.html" class="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium">Register</a>
+                            <a href="faq.html" class="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium">FAQ</a>
+                            <a href="contact.html" class="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium">Contact</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-gray-700 hover:text-blue-600 focus:outline-none">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white border-t">
+                <a href="../index.html" class="text-gray-700 hover:text-blue-600 block px-3 py-2 text-base font-medium">Home</a>
+                <a href="about.html" class="text-gray-700 hover:text-blue-600 block px-3 py-2 text-base font-medium">About</a>
+                <a href="events.html" class="text-blue-600 block px-3 py-2 text-base font-medium">Events</a>
+                <a href="schedule.html" class="text-gray-700 hover:text-blue-600 block px-3 py-2 text-base font-medium">Schedule</a>
+                <a href="register.html" class="text-gray-700 hover:text-blue-600 block px-3 py-2 text-base font-medium">Register</a>
+                <a href="faq.html" class="text-gray-700 hover:text-blue-600 block px-3 py-2 text-base font-medium">FAQ</a>
+                <a href="contact.html" class="text-gray-700 hover:text-blue-600 block px-3 py-2 text-base font-medium">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-r from-blue-600 to-purple-700 text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h1 class="text-4xl md:text-5xl font-bold mb-6">RWCC 2025 Events</h1>
+                <p class="text-xl md:text-2xl opacity-90">20+ Exciting Competitions & Challenges</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Events Section -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">Choose Your Challenge</h2>
+                <p class="text-xl text-gray-600">Explore our diverse range of events designed to showcase your talents and skills</p>
+            </div>
+
+            <!-- Event Cards -->
+            <div class="space-y-6">
+                <!-- Event 1: Lil Mavericks -->
+                <div class="bg-white border border-gray-200 rounded-lg shadow-sm overflow-hidden">
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-4">
+                            <div>
+                                <h3 class="text-xl font-bold text-gray-900">Lil Mavericks</h3>
+                                <div class="flex gap-2 mt-2">
+                                    <span class="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded">LP Category</span>
+                                    <span class="bg-green-100 text-green-800 text-xs px-2 py-1 rounded">Team</span>
+                                    <span class="bg-purple-100 text-purple-800 text-xs px-2 py-1 rounded">Pre-Judged</span>
+                                </div>
+                            </div>
+                            <button class="toggle-btn text-blue-600 hover:text-blue-800" data-target="event-1">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                                </svg>
+                            </button>
+                        </div>
+                        <p class="text-gray-600 mb-4">Creative storytelling competition for young innovators showcasing their imagination and presentation skills.</p>
+                        
+                        <div id="event-1" class="hidden space-y-4">
+                            <div class="bg-gray-50 p-4 rounded-lg">
+                                <h4 class="font-semibold text-gray-900 mb-2">Event Details</h4>
+                                <ul class="text-sm text-gray-600 space-y-1">
+                                    <li><strong>Participation:</strong> Team of 2-3 students</li>
+                                    <li><strong>Category:</strong> Lower Primary (LP)</li>
+                                    <li><strong>Submission Type:</strong> Pre-Judged</li>
+                                    <li><strong>Deadline:</strong> October 24, 2025</li>
+                                </ul>
+                            </div>
+                            <div class="bg-gray-50 p-4 rounded-lg">
+                                <h4 class="font-semibold text-gray-900 mb-2">Judging Criteria</h4>
+                                <ul class="text-sm text-gray-600 space-y-1">
+                                    <li>• Creativity and Innovation (30 points)</li>
+                                    <li>• Presentation Skills (25 points)</li>
+                                    <li>• Storytelling Quality (25 points)</li>
+                                    <li>• Teamwork and Collaboration (20 points)</li>
+                                </ul>
+                            </div>
+                            <div class="pt-4">
+                                <a href="https://forms.gle/2aQ7Yh7zj7pnEvHY6" target="_blank" class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition duration-300">
+                                    Register for Lil Mavericks
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Event 2: Smart Strokes for Young Folks -->
+                <div class="bg-white border border-gray-200 rounded-lg shadow-sm overflow-hidden">
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-4">
+                            <div>
+                                <h3 class="text-xl font-bold text-gray-900">Smart Strokes for Young Folks</h3>
+                                <div class="flex gap-2 mt-2">
+                                    <span class="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded">LP Category</span>
+                                    <span class="bg-orange-100 text-orange-800 text-xs px-2 py-1 rounded">Individual</span>
+                                    <span class="bg-purple-100 text-purple-800 text-xs px-2 py-1 rounded">Pre-Judged</span>
+                                </div>
+                            </div>
+                            <button class="toggle-btn text-blue-600 hover:text-blue-800" data-target="event-2">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                                </svg>
+                            </button>
+                        </div>
+                        <p class="text-gray-600 mb-4">Artistic expression competition where young artists showcase their creativity through visual arts.</p>
+                        
+                        <div id="event-2" class="hidden space-y-4">
+                            <div class="bg-gray-50 p-4 rounded-lg">
+                                <h4 class="font-semibold text-gray-900 mb-2">Event Details</h4>
+                                <ul class="text-sm text-gray-600 space-y-1">
+                                    <li><strong>Participation:</strong> Individual</li>
+                                    <li><strong>Category:</strong> Lower Primary (LP)</li>
+                                    <li><strong>Submission Type:</strong> Pre-Judged</li>
+                                    <li><strong>Deadline:</strong> October 24, 2025</li>
+                                </ul>
+                            </div>
+                            <div class="bg-gray-50 p-4 rounded-lg">
+                                <h4 class="font-semibold text-gray-900 mb-2">Judging Criteria</h4>
+                                <ul class="text-sm text-gray-600 space-y-1">
+                                    <li>• Artistic Creativity (35 points)</li>
+                                    <li>• Technical Skill (30 points)</li>
+                                    <li>• Theme Interpretation (25 points)</li>
+                                    <li>• Overall Impact (10 points)</li>
+                                </ul>
+                            </div>
+                            <div class="pt-4">
+                                <a href="https://forms.gle/8BicziAimbJsZZXq5" target="_blank" class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition duration-300">
+                                    Register for Smart Strokes
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Event 3: An Opus for a Better World -->
+                <div class="bg-white border border-gray-200 rounded-lg shadow-sm overflow-hidden">
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-4">
+                            <div>
+                                <h3 class="text-xl font-bold text-gray-900">An Opus for a Better World</h3>
+                                <div class="flex gap-2 mt-2">
+                                    <span class="bg-yellow-100 text-yellow-800 text-xs px-2 py-1 rounded">MS Category</span>
+                                    <span class="bg-orange-100 text-orange-800 text-xs px-2 py-1 rounded">Individual</span>
+                                    <span class="bg-purple-100 text-purple-800 text-xs px-2 py-1 rounded">Pre-Judged</span>
+                                </div>
+                            </div>
+                            <button class="toggle-btn text-blue-600 hover:text-blue-800" data-target="event-3">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                                </svg>
+                            </button>
+                        </div>
+                        <p class="text-gray-600 mb-4">Musical composition competition where students create original pieces that inspire positive change.</p>
+                        
+                        <div id="event-3" class="hidden space-y-4">
+                            <div class="bg-gray-50 p-4 rounded-lg">
+                                <h4 class="font-semibold text-gray-900 mb-2">Event Details</h4>
+                                <ul class="text-sm text-gray-600 space-y-1">
+                                    <li><strong>Participation:</strong> Individual</li>
+                                    <li><strong>Category:</strong> Middle School (MS)</li>
+                                    <li><strong>Submission Type:</strong> Pre-Judged</li>
+                                    <li><strong>Deadline:</strong> October 24, 2025</li>
+                                </ul>
+                            </div>
+                            <div class="bg-gray-50 p-4 rounded-lg">
+                                <h4 class="font-semibold text-gray-900 mb-2">Judging Criteria</h4>
+                                <ul class="text-sm text-gray-600 space-y-1">
+                                    <li>• Musical Composition (30 points)</li>
+                                    <li>• Creativity and Originality (25 points)</li>
+                                    <li>• Message and Impact (25 points)</li>
+                                    <li>• Performance Quality (20 points)</li>
+                                </ul>
+                            </div>
+                            <div class="pt-4">
+                                <a href="https://forms.gle/a6w8Fg7HLT6UogHcA" target="_blank" class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition duration-300">
+                                    Register for An Opus for a Better World
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Event 4: AdZapp -->
+                <div class="bg-white border border-gray-200 rounded-lg shadow-sm overflow-hidden">
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-4">
+                            <div>
+                                <h3 class="text-xl font-bold text-gray-900">AdZapp</h3>
+                                <div class="flex gap-2 mt-2">
+                                    <span class="bg-red-100 text-red-800 text-xs px-2 py-1 rounded">HS Category</span>
+                                    <span class="bg-green-100 text-green-800 text-xs px-2 py-1 rounded">Team</span>
+                                    <span class="bg-purple-100 text-purple-800 text-xs px-2 py-1 rounded">Pre-Judged</span>
+                                </div>
+                            </div>
+                            <button class="toggle-btn text-blue-600 hover:text-blue-800" data-target="event-5">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                </svg>
+            </button>
+        </div>
+        <p class="text-gray-600 mb-4">Photography contest capturing thoughtful decisions and personal growth through visuals.</p>
+        <div id="event-5" class="hidden space-y-4">
+            <div class="bg-gray-50 p-4 rounded-lg">
+                <h4 class="font-semibold text-gray-900 mb-2">Event Details</h4>
+                <ul class="text-sm text-gray-600 space-y-1">
+                    <li><strong>Participation:</strong> Individual</li>
+                    <li><strong>Category:</strong> Middle & Secondary School</li>
+                    <li><strong>Submission Type:</strong> Pre-Judged</li>
+                    <li><strong>Deadline:</strong> October 24, 2025</li>
+                </ul>
+            </div>
+            <div class="bg-gray-50 p-4 rounded-lg">
+                <h4 class="font-semibold text-gray-900 mb-2">Judging Criteria</h4>
+                <ul class="text-sm text-gray-600 space-y-1">
+                    <li>• Visual Creativity (30 points)</li>
+                    <li>• Message Clarity (30 points)</li>
+                    <li>• Theme Relevance (20 points)</li>
+                    <li>• Technical Composition (20 points)</li>
+                </ul>
+            </div>
+            <div class="pt-4">
+                <a href="https://forms.gle/ciocxi9kBbsWcRA97" target="_blank" class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition duration-300">
+                    Register for Live it, Click it, Share it
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Event 6: Transformation Turncoat -->
+<div class="bg-white border border-gray-200 rounded-lg shadow-sm overflow-hidden">
+    <div class="p-6">
+        <div class="flex justify-between items-start mb-4">
+            <div>
+                <h3 class="text-xl font-bold text-gray-900">Transformation Turncoat</h3>
+                <div class="flex gap-2 mt-2">
+                    <span class="bg-yellow-100 text-yellow-800 text-xs px-2 py-1 rounded">MS & SEC</span>
+                    <span class="bg-green-100 text-green-800 text-xs px-2 py-1 rounded">Individual</span>
+                    <span class="bg-red-100 text-red-800 text-xs px-2 py-1 rounded">On-site</span>
+                </div>
+            </div>
+            <button class="toggle-btn text-blue-600 hover:text-blue-800" data-target="event-6">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                </svg>
+            </button>
+        </div>
+        <p class="text-gray-600 mb-4">Speech event testing spontaneity and adaptability where participants speak both for and against a motion.</p>
+        <div id="event-6" class="hidden space-y-4">
+            <div class="bg-gray-50 p-4 rounded-lg">
+                <h4 class="font-semibold text-gray-900 mb-2">Event Details</h4>
+                <ul class="text-sm text-gray-600 space-y-1">
+                    <li><strong>Participation:</strong> Individual</li>
+                    <li><strong>Category:</strong> MS & SEC</li>
+                    <li><strong>Submission Type:</strong> On-site (Dec 2, 2025)</li>
+                    <li><strong>Topic:</strong> Given 15 minutes before performance</li>
+                </ul>
+            </div>
+            <div class="bg-gray-50 p-4 rounded-lg">
+                <h4 class="font-semibold text-gray-900 mb-2">Judging Criteria</h4>
+                <ul class="text-sm text-gray-600 space-y-1">
+                    <li>• Clarity of Thought (20 points)</li>
+                    <li>• Spontaneity (20 points)</li>
+                    <li>• Balance of Perspectives (20 points)</li>
+                    <li>• Body Language and Delivery (20 points)</li>
+                    <li>• Relevance to Theme (20 points)</li>
+                </ul>
+            </div>
+            <div class="pt-4">
+                <a href="https://forms.gle/truiwXt7XCwQBPow7" target="_blank" class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition duration-300">
+                    Register for Transformation Turncoat
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
